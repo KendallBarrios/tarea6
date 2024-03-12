@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Curso de Diseño de Aplicaciones Web">
+  <meta name="keywords" content="HTML5, CSS3, JAVASCRIPT, JSON, REST">
+  <meta name="author" content="Kendal Barrios Calderon">
+  <title>JavaScrip</title>
+  
+</head>
+<body>
+  <h1>Ejemplos basicos de JavaScrip</h1>
+
+  <form>
+    <fieldset>
+      <h2>Uso del if...else</h2>
+      <label>¿Cual es tu edad??</label><br>
+      <input type="number" id="edad" name="edad" min="1" max="120"><br><br>
+      <button type="button" onclick="funcionIF()">Correr</button>
+    </fieldset>
+  </form>
+
+  <form>
+    <fieldset>
+      <h2>Uso del switch y Objeto Number</h2>
+      <label>¿Del 1 al 7 que dia es hoy?</label><br>
+      <input type="number" id="dia" name="dia" min="1" max="7"><br><br>
+      <button type="button" onclick="fSwhich()">Correr</button>
+    </fieldset>
+  </form>
+
+  <form>
+    <fieldset>
+        <h2>Uso del For y Objeto String</h2>
+        <label>Contador de letras</label><br><br>
+        <label>Digite una palabra</label><br>
+        <input type="text" id="Texto" name="Texto"><br><br>
+        <button type="button" onclick="contador()">Correr</button><br><br>
+        <textarea name="resultado" id="resultado" cols="30" rows="10"></textarea>
+    </fieldset>
+</form>
+
+<form>
+  <fieldset>
+      <h2>Uso del While</h2>
+      <label>Contador de letras</label><br><br>
+      <label>Digite una palabra</label><br>
+      <input type="text" id="TextoInput" name="TextoInput"><br><br>
+      <button type="button" onclick="contWhile()">Correr</button><br><br>
+      <textarea name="resultado" id="resultadoTextarea" cols="30" rows="5"></textarea>
+  </fieldset>
+</form>
+
+<form>
+  <fieldset>
+      <h2>Uso del do...while</h2>
+      <label>Contador de letras</label><br><br>
+      <label>Digite una palabra</label><br>
+      <input type="text" id="doWhileTex" name="doWhileTex"><br><br>
+      <button type="button" onclick="doWhileContador()">Correr</button><br><br>
+      <textarea name="resultado" id="rdoWhile" cols="30" rows="10"></textarea>
+  </fieldset>
+</form>
+
+<form>
+  <fieldset>
+      <h2>Operaciones Aritméticas</h2>
+      <label>Ingrese el primer número:</label><br>
+      <input type="number" id="numero1" name="numero1"><br><br>
+      <label>Ingrese el segundo número:</label><br>
+      <input type="number" id="numero2" name="numero2"><br><br>
+      <button type="button" onclick="OperacionesArimeticas()">Calcular</button><br><br>
+      <textarea name="resultado" id="rOA" cols="30" rows="5"></textarea>
+  </fieldset>
+</form>
+
+<form>
+  <fieldset>
+      <h2>Operadores Lógicos</h2>
+      <label>Ingrese el primer valor booleano (true/false):</label><br>
+      <select id="valor1" name="valor1">
+          <option value="true">true</option>
+          <option value="false">false</option>
+      </select><br><br>
+      <label>Ingrese el segundo valor booleano (true/false):</label><br>
+      <select id="valor2" name="valor2">
+          <option value="true">true</option>
+          <option value="false">false</option>
+      </select><br><br>
+      <button type="button" onclick="OperacionesLogicos()">Calcular</button><br><br>
+      <textarea name="resultado" id="rOL" cols="30" rows="5"></textarea>
+  </fieldset>
+</form>
+
+  <form>
+    <fieldset>
+        <h2>Operaciones con el Objeto Math</h2>
+        <label>Ingrese un número para calcular su raíz cuadrada:</label><br>
+        <input type="number" id="numero" name="numero"><br><br>
+        <button type="button" onclick="OperacionesMath()">Calcular</button><br><br>
+        <textarea name="resultado" id="rOM" cols="30" rows="10"></textarea>
+    </fieldset>
+</form>
+
+<form>
+  <fieldset>
+      <h2>Fecha Actual con el Objeto Date</h2>
+      <button type="button" onclick="obtenerFecha()">Obtener Fecha Actual</button><br><br>
+      <textarea name="resultado" id="rOD" cols="30" rows="5"></textarea>
+  </fieldset>
+</form>
+
+<form>
+  <fieldset>
+      <h2>Cadenas Literales</h2>
+      <label>Ingrese su nombre:</label><br>
+      <input type="text" id="nombre" name="nombre"><br><br>
+      <button type="button" onclick="CadenasLiterales()">Generar Poema</button><br><br>
+      <textarea name="poema" id="rCL" cols="30" rows="10"></textarea>
+  </fieldset>
+</form>
+
+<form>
+  <fieldset>
+      <h2>Arreglo</h2>
+      <label>Ingrese un elemento:</label><br>
+      <input type="text" id="nuevoElemento" name="nuevoElemento"><br><br>
+      <button type="button" onclick="agregarElemento()">Agregar</button><br><br>
+      <textarea name="arreglo" id="arregloTextarea" cols="30" rows="10"></textarea>
+  </fieldset>
+</form>
+
+<form>
+  <fieldset>
+      <h2>Arreglo Tipado con int </h2>
+      <label>Ingrese un número:</label><br>
+      <input type="text" id="nuevoNumero" name="nuevoNumero"><br><br>
+      <button type="button" onclick="agregarNumero()">Agregar</button><br><br>
+      <textarea name="arregloNumeros" id="arregloNumerosTextarea" cols="30" rows="10"></textarea>
+  </fieldset>
+</form>
+<form>
+  <fieldset>
+    <textarea id="rDOM" cols="50" rows="20"></textarea>
+  </fieldset>
+</form>
+
+
+  <script src="logica.js"></script>
+</body>
+</html>
+
